@@ -34,7 +34,7 @@ exclude = [
 ]
 
 # Исправлять ошибки автоматически (можно отключить при необходимости)
-fix = false
+fix = true
 
 [tool.ruff.format]
 quote-style = "double"
