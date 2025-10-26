@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+
 from django.utils.translation import gettext_lazy as _
 from dotenv import load_dotenv
 
@@ -30,6 +31,7 @@ THEME_APPS = [
 ]
 
 MY_APPS = [
+    'apps.main',
 ]
 
 DJANGO_APPS = [
@@ -44,13 +46,16 @@ DJANGO_APPS = [
 LIBRARY_APPS = [
     'rest_framework',
     'drf_yasg',
+    'modeltranslation',
+    'ckeditor',
 ]
 
 INSTALLED_APPS = [
     *THEME_APPS,
     *DJANGO_APPS,
-    *MY_APPS,
     *LIBRARY_APPS,
+    *MY_APPS,
+
 ]
 
 MIDDLEWARE = [
@@ -129,3 +134,4 @@ MEDIA_ROOT = BASE_DIR / 'media/'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static/'
+
