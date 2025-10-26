@@ -10,14 +10,12 @@ from core.yasg import urlpatterns_yasg
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include(urlpatterns_yasg)),
-    path('', include('apps.main.urls')), 
 
 ]
 
 
 # Маршруты, зависящие от языка (i18n)
 urlpatterns += i18n_patterns(
-    path('', include('apps.main.urls')), 
 )
 
 
