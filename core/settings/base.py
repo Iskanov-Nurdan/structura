@@ -31,7 +31,6 @@ THEME_APPS = [
 ]
 
 MY_APPS = [
-    'apps.main',
 ]
 
 DJANGO_APPS = [
